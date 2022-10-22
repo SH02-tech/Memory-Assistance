@@ -30,11 +30,15 @@ class Prescripcion{                // Clase con visibilidad pública
     int getDosis() {return dosis;}
     int getFrecuencia() {return frecuencia;}
     
+
     void setId(int id) {this.id = id;}
     void setMedicamento(Medicamento medicamento) {this.medicamento = medicamento;}
     void setHoraInicio(String horaInicio) {this.horaInicio = horaInicio;}
     void setDosis(int dosis) {this.dosis = dosis;}
     void setFrecuencia(int frecuencia) {this.frecuencia = frecuencia;}
+
+    //ArrayList<Medicamento> getMedicamentosIncompatibles(Connection connection) {}
+    //int dosisRestantes() {}
     
     public String toString(){
         return "Prescripcion con ID: " + Integer.toString(id) +" hora inicio : "
