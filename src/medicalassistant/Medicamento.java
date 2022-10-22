@@ -1,3 +1,4 @@
+package medicalassistant;
 
 class Medicamento {                // Clase con visibilidad pública
     private int id;
@@ -16,6 +17,7 @@ class Medicamento {                // Clase con visibilidad pública
     String getNombre(){return nombre;}
     String getDescripcion(){return descripcion;}
     int getUnidades() {return unidades;}
+
     
     public String toString(){
         return "Medicamento con ID: " + Integer.toString(id) +" nombre: "

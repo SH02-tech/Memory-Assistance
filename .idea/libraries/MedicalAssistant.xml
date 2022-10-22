@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MedicalAssistant">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/MedicalAssistant.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
