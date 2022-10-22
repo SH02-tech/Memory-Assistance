@@ -1,3 +1,4 @@
+package medicalassistant;
 import java.util.Date;
 
 class prescripcion{                // Clase con visibilidad pública
@@ -22,6 +23,8 @@ class prescripcion{                // Clase con visibilidad pública
     int getDosis() {return dosis;}
     int getFrecuencia() {return frecuencia;}
     
+    ArrayList<Medicamento> getMedicamentosIncompatibles(Connection connection) {}
+    int dosisRestantes() {}
     
     public String toString(){
         return "Prescripcion con ID: " + Integer.toString(id) +" hora inicio : "
