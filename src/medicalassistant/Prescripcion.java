@@ -1,7 +1,6 @@
 package medicalassistant;
-import java.util.Date;
 
-class prescripcion{                // Clase con visibilidad pública
+class Prescripcion{                // Clase con visibilidad pública
     private int id;
     private Medicamento medicamento;
     private String horaInicio;
@@ -9,7 +8,15 @@ class prescripcion{                // Clase con visibilidad pública
     private int frecuencia;         //numero de horas entre el consumo de una pastilla y la siguiente 
     
     
-    prescripcion(int id, Medicamento medicamento, String horaInicio, int dosis, int frecuencia){  
+    Prescripcion(){  
+        this.id = -1;
+        this.medicamento = new Medicamento();
+        this.horaInicio = "default";
+        this.dosis = -1;
+        this.frecuencia = -1;
+    }
+    
+    Prescripcion(int id, Medicamento medicamento, String horaInicio, int dosis, int frecuencia){  
         this.id = id;
         this.medicamento = medicamento;
         this.horaInicio = horaInicio;
@@ -23,8 +30,15 @@ class prescripcion{                // Clase con visibilidad pública
     int getDosis() {return dosis;}
     int getFrecuencia() {return frecuencia;}
     
-    ArrayList<Medicamento> getMedicamentosIncompatibles(Connection connection) {}
-    int dosisRestantes() {}
+
+    void setId(int id) {this.id = id;}
+    void setMedicamento(Medicamento medicamento) {this.medicamento = medicamento;}
+    void setHoraInicio(String horaInicio) {this.horaInicio = horaInicio;}
+    void setDosis(int dosis) {this.dosis = dosis;}
+    void setFrecuencia(int frecuencia) {this.frecuencia = frecuencia;}
+
+    //ArrayList<Medicamento> getMedicamentosIncompatibles(Connection connection) {}
+    //int dosisRestantes() {}
     
     public String toString(){
         return "Prescripcion con ID: " + Integer.toString(id) +" hora inicio : "
